@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="/Images/Favicon.png" type="image/x-icon">
+    <script
+      src="https://kit.fontawesome.com/3c6aad22b8.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Live Code Editor</title>
+  </head>
+  <body>
+    <div class="main-div">
+
+        <!-- Top marquee Tag  -->
+      <marquee class="blink" scrollamount="7">
+        <span> LIVE </span> Simple Code Editor Using HTML,CSS,JavaScript By
+        <a href="https://github.com/pravin817" target="_blank"
+          >Pravin817
+        </a></marquee
+      >
+
+      <div class="container">
+        <div class="left">
+
+          <!-- HTML code  -->
+          <label><i class="fa-brands fa-html5"></i> HTML </label>
+          <textarea id="html-code" onkeyup="run()"></textarea>
+
+          <!-- CSS Code -->
+          <label><i class="fa-brands fa-css3-alt"></i>CSS</label>
+          <textarea id="css-code" onkeyup="run()"></textarea>
+
+          <!-- JavaScript Code  -->
+          <label><i class="fa-brands fa-square-js"></i>JavaScript</label>
+          <textarea id="js-code" onkeyup="run()"></textarea>
+        </div>
+
+        <!-- The output side  -->
+        <div class="right">
+          <label><i class="fa-solid fa-play"></i> Output</label>
+          <iframe id="output"></iframe>
+        </div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
